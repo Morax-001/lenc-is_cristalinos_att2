@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lençóis Cristalinos - Contato</title>
+
+    <link rel="stylesheet" href="stylecon.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><li><a>Lençóis Cristalinos </a></li></div>
+             <img src="Img/LOGO.png" alt="Logo">
+             
+            <ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+<li><a href="contato.html">Contato</a></li>
+<li><a href="equipe.html">Equipe</a></li>
+<li><a href="fluxograma.html">Mais</a></li>
+            </ul>
+        </nav>
+    </header>  
+    
+    <div class="contact-container">
+        <h1>Contate-nos</h1>
+        <p>Antes de começar a planejar sua viagem, se cadastre em nosso site logo abaixo.</p>
+        
+        <form id="form-contato" action="#" method="POST" novalidate>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Seu melhor e-mail">
+            </div>
+            
+            <div class="form-group">
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required placeholder="Sobre o que deseja falar?">
+            </div>
+            
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required maxlength="2000" placeholder="Como podemos ajudar?"></textarea>
+                <small class="contador" id="contador">0 / 2000</small>
+            </div>
+
+            <!-- Campo isca anti-spam: pessoas não veem, robôs preenchem -->
+            <div class="honeypot" aria-hidden="true">
+                <label for="website">Não preencha este campo</label>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
+            
+            <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+        </form>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Lençóis Cristalinos - @LençóisCristalinos    (98) 91184-3004.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="contato.js"></script>
+</body>
+</html>
+    

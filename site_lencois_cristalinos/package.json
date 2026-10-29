@@ -1,0 +1,10 @@
+{
+  "name": "lencois-cristalinos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Guia de turismo Lençóis Cristalinos — site estático + API de contato (MySQL)",
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "mysql2": "^3.11.0"
+  }
+}

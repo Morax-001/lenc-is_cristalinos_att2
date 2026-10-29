@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+background-color: #f4f7f6;
+background-image: url("Img/por-sol-nos-lencois-maranhense.webp");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+color: #333;
+line-height: 1.6;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+/*CABEÇALHO*/
+header {
+    width: 100%;             
+    background-color: #b9e4fa;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0077b6;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #043147;
+}
+
+img {
+    width: 70px;
+    height: 60px;
+}
+
+/*PÁGINA DE CONTATO*/
+.contact-container {
+    margin: auto;            
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.contact-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #34495e;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.2);
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: #78b4dd;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    background-color:#b9e4fa;
+    color: #087db8;
+    text-align: center;
+    padding: 0.3rem;
+    margin-top: 2rem;
+}
+
+.btn-enviar:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 25px;
+        margin: auto 20px;
+    }
+}
+/* Responsividade para telemóveis (ecrãs até 768px de largura) */
+@media screen and (max-width: 768px) {
+  /* Reduzir espaçamentos gerais para caber no ecrã do telemóvel */
+  body {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  /* Exemplo: transformar menus ou caixas lado a lado em colunas empilhadas */
+  .container, .menu, .row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Ajustar tamanho de títulos grandes */
+  h1 {
+    font-size: 26px;
+  }
+}

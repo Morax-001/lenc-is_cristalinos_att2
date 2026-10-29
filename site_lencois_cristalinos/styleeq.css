@@ -1,0 +1,336 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fffcf8;
+    color: #068dd6;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #b9e4fa;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0077b6;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0994df;
+}
+
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://www.estadao.com.br/resizer/OPMn3QjqyXpTmLx75E8mUTY0kVM=/arc-anglerfish-arc2-prod-estadao/public/DRNTLEAKTNOXDNILXMOCIBL3RI.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #0994df;
+    padding: 0 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.btn {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #0096c7;
+}
+
+img {
+    width: 70px;
+    height: 60px;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background-color: #b9e4fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0077b6;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #043147;
+}
+
+img {
+    width: 70px;
+    height: 60px;
+}
+
+.team-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-header h1 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.team-header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.team-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.team-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #3498db;
+}
+
+.team-card h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.team-card .role {
+    display: block;
+    color: #3498db;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.team-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.contact-container {
+    margin: auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.contact-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #34495e;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.2);
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 600px) {
+    .team-header h1 {
+        font-size: 1.8rem;
+    }
+    .contact-container {
+        padding: 25px;
+        margin: auto 20px;
+    }
+}
+/* Responsividade para telemóveis (ecrãs até 768px de largura) */
+@media screen and (max-width: 768px) {
+  /* Reduzir espaçamentos gerais para caber no ecrã do telemóvel */
+  body {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  /* Exemplo: transformar menus ou caixas lado a lado em colunas empilhadas */
+  .container, .menu, .row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Ajustar tamanho de títulos grandes */
+  h1 {
+    font-size: 26px;
+  }
+}

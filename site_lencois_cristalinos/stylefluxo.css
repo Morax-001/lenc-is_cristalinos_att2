@@ -1,0 +1,301 @@
+
+/* =====================================
+   CONFIGURAÇÕES GERAIS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+}
+
+
+
+/* =====================================
+   CABEÇALHO
+===================================== */
+
+header {
+    width: 100%;
+    background-color: #b9e4fa;
+    border-bottom: 3px solid #0077b6;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 25px;
+}
+
+
+/* Logo em texto */
+
+.logo a {
+    color: #0077b6;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+/* Imagem da logo */
+
+nav img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin: 0 20px;
+}
+
+
+/* Links do menu */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #0077b6;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #0077b6;
+}
+
+
+/* =====================================
+   CARROSSEL
+===================================== */
+
+.secao-carrossel {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+
+/* Container centralizado */
+
+.carrossel-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    border: 3px solid #0077b6;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Estrutura do carrossel */
+
+#carouselExampleDark {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+
+/* Imagens */
+
+#carouselExampleDark .carousel-item img {
+    width: 600%;
+    height: 880px;
+    object-fit: cover;
+    object-position: center 30%;
+}
+
+
+
+/* Indicadores */
+
+#carouselExampleDark .carousel-indicators {
+    margin-bottom: 18px;
+    gap: 8px;
+    z-index: 5;
+}
+
+#carouselExampleDark .carousel-indicators button {
+    width: 11px;
+    height: 11px;
+    margin: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#carouselExampleDark .carousel-indicators button.active {
+    background-color: #0077b6;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+
+/* Setas de navegação */
+
+#carouselExampleDark .carousel-control-prev,
+#carouselExampleDark .carousel-control-next {
+    width: 55px;
+    height: 55px;
+    top: 50%;
+    bottom: auto;
+    margin: 0 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 119, 182, 0.9);
+    opacity: 1;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease;
+}
+
+#carouselExampleDark .carousel-control-prev:hover,
+#carouselExampleDark .carousel-control-next:hover {
+    background-color: #005f91;
+}
+
+
+/* =====================================
+   RESPONSIVIDADE
+===================================== */
+
+@media (max-width: 900px) {
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .logo a {
+        font-size: 21px;
+    }
+
+    nav img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+}
+
+
+/* Tablets e celulares */
+
+@media (max-width: 768px) {
+
+    .secao-carrossel {
+        padding: 35px 15px;
+    }
+
+    .carrossel-container {
+        border-width: 2px;
+        border-radius: 16px;
+    }
+
+    #carouselExampleDark .carousel-item img {
+        height: 350px;
+    }
+
+    #carouselExampleDark .carousel-control-prev,
+    #carouselExampleDark .carousel-control-next {
+        width: 42px;
+        height: 42px;
+        margin: 0 10px;
+    }
+
+    #carouselExampleDark .carousel-indicators {
+        margin-bottom: 12px;
+    }
+
+}
+
+
+/* Celulares pequenos */
+
+@media (max-width: 480px) {
+
+    nav {
+        padding: 15px 10px;
+    }
+
+    .logo a {
+        font-size: 19px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .secao-carrossel {
+        padding: 25px 10px;
+    }
+
+    .carrossel-container {
+        border-radius: 12px;
+    }
+
+    #carouselExampleDark .carousel-item img {
+        height: 260px;
+    }
+
+    #carouselExampleDark .carousel-control-prev,
+    #carouselExampleDark .carousel-control-next {
+        width: 34px;
+        height: 34px;
+        margin: 0 6px;
+    }
+
+    #carouselExampleDark .carousel-indicators button {
+        width: 8px;
+        height: 8px;
+    }
+
+}
+/* Responsividade para telemóveis (ecrãs até 768px de largura) */
+@media screen and (max-width: 768px) {
+  /* Reduzir espaçamentos gerais para caber no ecrã do telemóvel */
+  body {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  /* Exemplo: transformar menus ou caixas lado a lado em colunas empilhadas */
+  .container, .menu, .row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Ajustar tamanho de títulos grandes */
+  h1 {
+    font-size: 26px;
+  }
+}
